@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Calafate</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <h1>Explore Calafate</h1>
+            <p class="tagline"><em>Asesoría gratuita para tu viaje. No cobramos, pero se aceptan tips.<br>Free travel advice. No charge, but tips are welcome.</em></p>
+            <nav>
+                <ul>
+                    <li><a href="#about">Sobre mí / About</a></li>
+                    <li><a href="#activities">Qué hacer / What to do</a></li>
+                    <li><a href="#contact">Contacto / Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <section class="hero">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Perito_Moreno_Glacier_Patagonia_Argentina_Luca_Galuzzi_2005.JPG" alt="Glaciar Perito Moreno">
+            <div class="hero-text">
+                <h2>Bienvenidos a El Calafate</h2>
+                <p>Te ayudo a planificar tu visita a los lugares más impresionantes de la Patagonia.</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>Sobre mí / About me</h2>
+            <p>Soy un local de El Calafate que ama ayudar a los viajeros a descubrir esta tierra mágica. Conozco cada rincón y quiero compartir mis consejos para que aproveches tu visita al máximo.</p>
+            <p>I am a local from El Calafate who loves helping travelers discover this magical land. I know every corner and want to share my tips so you get the most out of your visit.</p>
+        </section>
+
+        <section id="activities">
+            <h2>Qué hacer en El Calafate / What to do</h2>
+            <ul>
+                <li><strong>Excursiones:</strong> Glaciar Perito Moreno, Glaciar Spegazzini, Fitz Roy</li>
+                <li><strong>Cambio de divisas:</strong> Lugares seguros para cambiar USD a pesos</li>
+                <li><strong>Restaurantes:</strong> Recomendaciones locales</li>
+                <li><strong>Alojamiento:</strong> Tips para elegir según tu presupuesto</li>
+                <li><strong>Transporte:</strong> Alquiler de autos, colectivos, traslados</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contacto / Contact</h2>
+            <form action="mailto:tuemail@ejemplo.com" method="POST" enctype="text/plain">
+                <label for="name">Nombre / Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje / Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Enviar / Send</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Explore Calafate. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
