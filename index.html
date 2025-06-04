@@ -1,44 +1,57 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> <!-- Define el tipo de documento como HTML5 -->
+<html lang="es"> <!-- Indica que el contenido está en español -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore Calafate</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"> <!-- Codificación de caracteres en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta el diseño al tamaño del dispositivo -->
+    <title>Explore Calafate</title> <!-- Título que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="style.css"> <!-- Vincula el archivo de estilos CSS externo -->
+
+    <!-- VARIANTE: podrías agregar icono, SEO básico y fuentes personalizadas -->
+    <!-- <link rel="icon" href="favicon.ico"> -->
+    <!-- <meta name="description" content="Asesoría gratuita para viajar a El Calafate. Tips y recomendaciones de un local."> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> -->
 </head>
 <body>
 
     <!-- HEADER -->
     <header>
-        <div class="container">
-            <h1>Explore Calafate</h1>
-            <p class="tagline"><em>Asesoría gratuita para tu viaje. No cobramos, pero se aceptan tips.<br>Free travel advice. No charge, but tips are welcome.</em></p>
-            <nav>
+        <div class="container"> <!-- Contenedor para aplicar estilos como centrado o márgenes -->
+            <h1>Explore Calafate</h1> <!-- Título principal del sitio -->
+            <p class="tagline">
+                <em>Asesoría gratuita para tu viaje. No cobramos, pero se aceptan tips.<br>
+                Free travel advice. No charge, but tips are welcome.</em>
+            </p>
+            <nav> <!-- Menú de navegación -->
                 <ul>
                     <li><a href="#about">Sobre mí / About</a></li>
                     <li><a href="#activities">Qué hacer / What to do</a></li>
                     <li><a href="#contact">Contacto / Contact</a></li>
                 </ul>
             </nav>
+
+            <!-- VARIANTE: podrías usar un botón de idioma para cambiar el contenido dinámicamente -->
         </div>
     </header>
 
     <!-- MAIN CONTENT -->
     <main>
+        <!-- Sección de portada principal (hero) -->
         <section class="hero">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Perito_Moreno_Glacier_Patagonia_Argentina_Luca_Galuzzi_2005.JPG" alt="Glaciar Perito Moreno">
-            <div class="hero-text">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Perito_Moreno_Glacier_Patagonia_Argentina_Luca_Galuzzi_2005.JPG" alt="Glaciar Perito Moreno"> <!-- Imagen destacada -->
+            <div class="hero-text"> <!-- Texto sobre la imagen -->
                 <h2>Bienvenidos a El Calafate</h2>
                 <p>Te ayudo a planificar tu visita a los lugares más impresionantes de la Patagonia.</p>
             </div>
         </section>
 
+        <!-- Sobre mí -->
         <section id="about">
             <h2>Sobre mí / About me</h2>
-            <p>Soy un local de El Calafate que ama ayudar a los viajeros a descubrir esta tierra mágica. Conozco cada rincón y quiero compartir mis consejos para que aproveches tu visita al máximo.</p>
-            <p>I am a local from El Calafate who loves helping travelers discover this magical land. I know every corner and want to share my tips so you get the most out of your visit.</p>
+            <p>Soy un local de El Calafate que ama ayudar a los viajeros a descubrir esta tierra mágica...</p>
+            <p>I am a local from El Calafate who loves helping travelers discover this magical land...</p>
         </section>
 
+        <!-- Actividades recomendadas -->
         <section id="activities">
             <h2>Qué hacer en El Calafate / What to do</h2>
             <ul>
@@ -48,31 +61,13 @@
                 <li><strong>Alojamiento:</strong> Tips para elegir según tu presupuesto</li>
                 <li><strong>Transporte:</strong> Alquiler de autos, colectivos, traslados</li>
             </ul>
+
+            <!-- VARIANTE: podrías agregar íconos con Font Awesome para cada ítem -->
+            <!-- <li><i class="fa-solid fa-utensils"></i> Restaurantes: ... </li> -->
         </section>
 
+        <!-- Formulario de contacto -->
         <section id="contact">
             <h2>Contacto / Contact</h2>
-            <form action="mailto:mpsanabriia@gmail.com" method="POST" enctype="text/plain">
-                <label for="name">Nombre / Name:</label>
-                <input type="text" id="name" name="name" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Mensaje / Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <button type="submit">Enviar / Send</button>
-            </form>
-        </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Explore Calafate. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-
-</body>
-</html>
+            <!-- VARIANTE: usar un backend (PHP, Node.js) o servicio como Formspr
