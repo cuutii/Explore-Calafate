@@ -3,118 +3,322 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- SEO Title -->
-  <title>El Calafate | Glaciares, Excursiones y Turismo en Argentina</title>
-  
-  <!-- Meta Description -->
-  <meta name="description" content="Descubrí El Calafate, puerta de entrada al Glaciar Perito Moreno y Spegazzini. Excursiones únicas en la Patagonia Sur de Argentina.">
-  
-  <!-- Meta Keywords -->
-  <meta name="keywords" content="El Calafate, Calafate, Glaciar, Perito Moreno, Spegazzini, Sur, Argentina, Excursiones, Turismo, Patagonia">
-  
-  <!-- Open Graph -->
-  <meta property="og:title" content="El Calafate | Glaciares y Excursiones en Argentina">
-  <meta property="og:description" content="Explora los glaciares Perito Moreno y Spegazzini con excursiones inolvidables en El Calafate, Patagonia Sur.">
+
+  <!-- ============ SEO ============ -->
+  <title>Explore Calafate | Qué hacer, excursiones y reseñas reales de turistas</title>
+  <meta name="description" content="Guía de El Calafate: qué hacer, glaciares, trekking y gastronomía. Con reseñas reales de turistas que ya fueron, filtrables por país e idioma.">
+  <meta name="keywords" content="El Calafate, Glaciar Perito Moreno, Spegazzini, El Chaltén, Patagonia, Argentina, excursiones, trekking, reseñas turistas">
+
+  <!-- ============ Open Graph ============ -->
+  <meta property="og:title" content="Explore Calafate | Qué hacer y reseñas reales de turistas">
+  <meta property="og:description" content="Planificá tu viaje a El Calafate con guía de actividades y experiencias reales de quienes ya fueron.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://tu-sitio.com/el-calafate">
-  <meta property="og:image" content="https://tu-sitio.com/images/el-calafate-glaciar.jpg">
-  
-  <!-- SEO Local -->
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:url" content="https://cuutii.github.io/Explore-Calafate/">
+  <meta property="og:image" content="https://cuutii.github.io/Explore-Calafate/img/perito-moreno.jpg">
+
+  <!-- ============ SEO local ============ -->
   <meta name="geo.region" content="AR-S">
   <meta name="geo.placename" content="El Calafate, Santa Cruz, Argentina">
   <meta name="geo.position" content="-50.337; -72.264">
   <meta name="ICBM" content="-50.337, -72.264">
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Montserrat', sans-serif; background: #f5f9fc; color: #333; line-height: 1.6; }
-    header { background: linear-gradient(to right, #005f99, #0077b6); color: #fff; text-align: center; padding: 3rem 1rem; }
-    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
-    header p { font-size: 1.2rem; opacity: 0.9; }
+    img { max-width: 100%; display: block; }
+
+    /* ---------- Encabezado ---------- */
+    header {
+      background: linear-gradient(to right, #005f99, #0077b6);
+      color: #fff; text-align: center; padding: 3.5rem 1rem;
+    }
+    header h1 { font-size: 2.5rem; margin-bottom: .5rem; }
+    header p { font-size: 1.2rem; opacity: .92; }
+
     section { padding: 3rem 1.5rem; max-width: 1200px; margin: auto; }
-    h2 { text-align: center; font-size: 2rem; margin-bottom: 2rem; color: #005f99; }
-    section img { width: 100%; height: 280px; object-fit: cover; border-radius: 12px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); margin-bottom: 1rem; }
-    .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
-    .card { background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 6px 12px rgba(0,0,0,0.1); transition: transform 0.2s ease; }
+    h2 { text-align: center; font-size: 2rem; margin-bottom: .6rem; color: #005f99; }
+    .intro { text-align: center; max-width: 760px; margin: 0 auto 2.5rem; color: #555; }
+
+    /* ---------- Tarjetas ---------- */
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+    .card { background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 6px 12px rgba(0,0,0,.1); transition: transform .2s ease; display: flex; flex-direction: column; }
     .card:hover { transform: translateY(-5px); }
     .card img { width: 100%; height: 200px; object-fit: cover; }
-    .card-content { padding: 1.5rem; }
-    .card-content h3 { font-size: 1.3rem; color: #0077b6; margin-bottom: 0.5rem; }
-    .card-content p { font-size: 0.95rem; color: #555; }
-    form { background: #fff; padding: 2rem; border-radius: 15px; box-shadow: 0 6px 12px rgba(0,0,0,0.1); max-width: 600px; margin: 2rem auto; }
-    .form-group { margin-bottom: 1.5rem; }
-    label { display: block; font-weight: 600; margin-bottom: 0.5rem; color: #005f99; }
-    input, textarea, select { width: 100%; padding: 0.9rem; border: 1px solid #ccc; border-radius: 10px; font-size: 1rem; transition: border 0.3s; }
-    input:focus, textarea:focus, select:focus { border-color: #0077b6; outline: none; }
-    textarea { resize: vertical; min-height: 120px; }
-    button.submit-button { background: #ff6b35; color: #fff; border: none; padding: 1rem 1.5rem; border-radius: 10px; font-size: 1rem; cursor: pointer; transition: background 0.3s ease; }
+    .card-content { padding: 1.5rem; flex: 1; }
+    .card-content h3 { font-size: 1.3rem; color: #0077b6; margin-bottom: .5rem; }
+    .card-content p { font-size: .95rem; color: #555; margin-bottom: 1rem; }
+    .opciones { list-style: none; }
+    .opciones li { font-size: .92rem; color: #444; padding: .4rem 0 .4rem 1.5rem; position: relative; border-top: 1px solid #eef3f8; }
+    .opciones li::before { content: "✓"; position: absolute; left: 0; color: #ff6b35; font-weight: 700; }
+
+    /* ---------- Reseñas ---------- */
+    #resenas { background: #eef5fa; }
+    .filtros { display: flex; flex-wrap: wrap; gap: .8rem; justify-content: center; align-items: flex-end; margin-bottom: .8rem; }
+    .campo { display: flex; flex-direction: column; text-align: left; }
+    .campo label { font-weight: 600; font-size: .85rem; color: #005f99; margin-bottom: .3rem; }
+    select { padding: .7rem .9rem; border: 1px solid #ccc; border-radius: 10px; font-size: .95rem; font-family: inherit; background: #fff; min-width: 190px; }
+    select:focus { border-color: #0077b6; outline: none; }
+    .btn-suave { background: none; border: 1px solid #0077b6; color: #0077b6; padding: .7rem 1.1rem; border-radius: 10px; font-family: inherit; font-weight: 600; cursor: pointer; transition: background .2s; }
+    .btn-suave:hover { background: #0077b6; color: #fff; }
+    .contador { text-align: center; color: #666; font-size: .9rem; margin-bottom: 1.8rem; }
+
+    .lista-resenas { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; }
+    .resena { background: #fff; border-radius: 14px; padding: 1.4rem 1.5rem; box-shadow: 0 4px 10px rgba(0,0,0,.07); display: flex; flex-direction: column; }
+    .resena-cab { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; margin-bottom: .7rem; }
+    .resena-lugar { font-size: 1.1rem; color: #005f99; margin-bottom: .15rem; }
+    .resena-meta { font-size: .85rem; color: #666; }
+    .estrellas { color: #ff9f1c; font-size: 1.15rem; letter-spacing: 1px; white-space: nowrap; }
+    .resena-fecha { font-size: .78rem; color: #999; text-align: right; margin-top: .2rem; }
+    .resena-texto { font-size: .95rem; color: #444; flex: 1; }
+    .resena-idioma { font-size: .75rem; color: #8a97a8; margin-top: .9rem; text-transform: uppercase; letter-spacing: .5px; }
+
+    .resena-vacio { text-align: center; background: #fff; border: 2px dashed #c6d8e6; border-radius: 14px; padding: 2.5rem 1.5rem; grid-column: 1 / -1; }
+    .resena-vacio h3 { color: #005f99; margin-bottom: .4rem; }
+    .resena-vacio p { color: #667; margin-bottom: 1.2rem; }
+
+    /* ---------- Formulario ---------- */
+    form { background: #fff; padding: 2rem; border-radius: 15px; box-shadow: 0 6px 12px rgba(0,0,0,.1); max-width: 640px; margin: 0 auto; }
+    .form-group { margin-bottom: 1.4rem; }
+    label { display: block; font-weight: 600; margin-bottom: .5rem; color: #005f99; }
+    input, textarea, select.campo-form { width: 100%; padding: .9rem; border: 1px solid #ccc; border-radius: 10px; font-size: 1rem; font-family: inherit; transition: border .3s; }
+    input:focus, textarea:focus, select.campo-form:focus { border-color: #0077b6; outline: none; }
+    textarea { resize: vertical; min-height: 130px; }
+    .fila { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+    @media (max-width: 520px) { .fila { grid-template-columns: 1fr; } }
+    button.submit-button { background: #ff6b35; color: #fff; border: none; padding: 1rem 1.8rem; border-radius: 10px; font-size: 1rem; font-weight: 600; font-family: inherit; cursor: pointer; transition: background .3s ease; width: 100%; }
     button.submit-button:hover { background: #ff884d; }
-    footer { background: #005f99; color: #fff; text-align: center; padding: 1.5rem; margin-top: 2rem; font-size: 0.9rem; }
+    .nota { max-width: 640px; margin: 1.4rem auto 0; background: #fff7f2; border-left: 4px solid #ff6b35; padding: 1rem 1.2rem; border-radius: 0 10px 10px 0; font-size: .9rem; color: #5a4a42; }
+
+    footer { background: #005f99; color: #fff; text-align: center; padding: 1.8rem 1rem; margin-top: 2rem; font-size: .88rem; }
+    footer .creditos { max-width: 900px; margin: .9rem auto 0; font-size: .76rem; opacity: .85; line-height: 1.7; }
+    footer a { color: #cfe6f5; }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Descubrí El Calafate</h1>
-    <p>Glaciares, excursiones y turismo en la Patagonia Sur de Argentina</p>
+    <p>Qué hacer, excursiones y reseñas reales de quienes ya fueron</p>
   </header>
 
-  <section>
-    <h2>Glaciar Perito Moreno</h2>
-    <img src="https://wallpapercave.com/wp/wp4201820.jpg" alt="Glaciar Perito Moreno en El Calafate">
-    <p>Uno de los glaciares más imponentes del mundo, con un frente de 5 km y paredes de hasta 74 metros sobre el Lago Argentino.</p>
+  <!-- ===================== QUÉ HACER ===================== -->
+  <section id="que-hacer">
+    <h2>Qué hacer en El Calafate</h2>
+    <p class="intro">
+      El Calafate es la puerta de entrada al Parque Nacional Los Glaciares. Estas son las
+      opciones principales, agrupadas por zona, con lo que conviene saber de cada una.
+    </p>
 
-    <h2>Glaciar Spegazzini</h2>
-    <img src="https://lirp.cdn-website.com/0e23376f/dms3rep/multi/opt/glaciar-spegazzini-solo-patagonia-1920w.jpg" alt="Glaciar Spegazzini en Patagonia Sur">
-    <p>Accesible por barco, el glaciar más alto del parque con paredes que superan los 130 metros de altura.</p>
+    <div class="card-grid">
 
-    <h2>Gastronomía Calafateña</h2>
-    <img src="https://i.pinimg.com/originals/41/c8/6a/41c86a5b2c767e3061a4e5e4fd8cbb30.jpg" alt="Gastronomía típica de El Calafate">
-    <p>Disfrutá del cordero patagónico, trucha, guanaco y dulces artesanales de calafate en los mejores restaurantes locales.</p>
+      <article class="card">
+        <img src="img/perito-moreno.jpg" alt="Frente del Glaciar Perito Moreno visto desde las pasarelas">
+        <div class="card-content">
+          <h3>Glaciar Perito Moreno</h3>
+          <p>El más accesible y el más famoso: frente de 5 km y paredes de hasta 74 m sobre el Lago Argentino. A 78 km del pueblo, se llega en colectivo, remise o excursión.</p>
+          <ul class="opciones">
+            <li><b>Pasarelas y miradores</b> — camino de costa libre, sin guía.</li>
+            <li><b>Mini trekking sobre el hielo</b> — requiere reserva previa.</li>
+            <li><b>Navegación frente al hielo</b> — acerca la embarcación al frente.</li>
+            <li><b>Big Ice</b> — trekking de día completo, exigente.</li>
+          </ul>
+        </div>
+      </article>
 
-    <h2>El Calafate</h2>
-    <img src="https://www.civitatis.com/f/argentina/el-calafate/galeria/vista-aerea-calafate.jpg" alt="Vista aérea de El Calafate, Santa Cruz">
-    <p>Puerta de entrada al Parque Nacional Los Glaciares, El Calafate se ubica a orillas del Lago Argentino y es famoso por el imponente Glaciar Perito Moreno.</p>
+      <article class="card">
+        <img src="img/spegazzini.jpg" alt="Glaciar Spegazzini con su frente de hielo">
+        <div class="card-content">
+          <h3>Glaciar Spegazzini</h3>
+          <p>El más alto del parque, con paredes que superan los 130 metros. Se llega solo por agua, desde Puerto Bandera, en una navegación de día completo.</p>
+          <ul class="opciones">
+            <li><b>Navegación al Spegazzini</b> — suele encadenar con Onelli y Upsala.</li>
+            <li><b>Mejor momento:</b> la luz de la mañana pega de frente.</li>
+            <li><b>Consejo:</b> llevar abrigo aunque haga calor en el pueblo.</li>
+          </ul>
+        </div>
+      </article>
 
-    <h2>El Chaltén</h2>
-    <img src="https://wallpapercave.com/wp/wp7074839.jpg" alt="Vista de El Chaltén, Capital Nacional del Trekking">
-    <p>Conocido como la Capital Nacional del Trekking, El Chaltén se encuentra al pie del Cerro Fitz Roy.</p>
+      <article class="card">
+        <img src="img/el-chalten.jpg" alt="Sendero de la Laguna Torre, cerca de El Chaltén">
+        <div class="card-content">
+          <h3>El Chaltén y el trekking</h3>
+          <p>A 215 km por ruta, la Capital Nacional del Trekking. Se llega en colectivo de media jornada y se recorre caminando: los senderos salen desde el centro.</p>
+          <ul class="opciones">
+            <li><b>Laguna de los Tres</b> — vista del Fitz Roy. 22 km ida y vuelta, dificultad alta.</li>
+            <li><b>Laguna Torre</b> — 18 km, más llevadera, con el Cerro Torre al fondo.</li>
+            <li><b>Piedras del Carrizal</b> — corta y apta para casi todos.</li>
+            <li><b>Ojo:</b> el viento patagónico cambia el clima en minutos.</li>
+          </ul>
+        </div>
+      </article>
 
-    <h2>Servicios adicionales</h2>
-    <p>Podés cambiar dinero en casas de cambio, usar cajeros automáticos o pedir remises económicos (tipo “Uber local”) para moverte más barato por la ciudad.</p>
+      <article class="card">
+        <img src="img/calafate.jpg" alt="Avenida Libertador, la calle principal de El Calafate">
+        <div class="card-content">
+          <h3>El pueblo de El Calafate</h3>
+          <p>La Avenida Libertador es su eje: restaurantes, museos y casas de excursiones. Todo lo que se contrata se consigue caminando por ahí.</p>
+          <ul class="opciones">
+            <li><b>Museo Glaciares</b> — buena opción para un día de lluvia.</li>
+            <li><b>Cambios y cajeros</b> — hay casas de cambio y cajeros en el centro.</li>
+            <li><b>Remises</b> — la alternativa al colectivo para ir al glaciar.</li>
+            <li><b>Reservar con anticipación</b> — en temporada alta se llena.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="img/gastronomia.jpg" alt="Cordero patagónico asado a las llamas">
+        <div class="card-content">
+          <h3>Gastronomía patagónica</h3>
+          <p>La comida es una excursión en sí misma. El cordero asado a las llamas es el plato por excelencia de la región.</p>
+          <ul class="opciones">
+            <li><b>Cordero patagónico</b> — asado al palo o a las llamas.</li>
+            <li><b>Trucha patagónica</b> — frita o al horno.</li>
+            <li><b>Guiso de cordero</b> — ideal para los días de frío.</li>
+            <li><b>El calafate</b> — fruto local; se dice que quien lo come, vuelve.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-content">
+          <h3>Antes de salir</h3>
+          <p>Detalles prácticos que cambian la calidad del viaje.</p>
+          <ul class="opciones">
+            <li><b>Temporada:</b> noviembre a marzo es la más favorable.</li>
+            <li><b>Viento:</b> siempre llevar campera impermeable.</li>
+            <li><b>Nieve en junio-agosto:</b> el Perito Moreno se puede ver con nieve.</li>
+            <li><b>Pack:</b> lentes de sol, protector solar y botella de agua.</li>
+            <li><b>Parque:</b> la entrada al Parque Los Glaciares se paga aparte.</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
   </section>
 
-  <section>
-    <h2>Dejanos tu consulta o experiencia</h2>
+  <!-- ===================== RESEÑAS ===================== -->
+  <section id="resenas">
+    <h2>Reseñas de turistas</h2>
+    <p class="intro">
+      Experiencias reales de personas que ya visitaron El Calafate. Filtrá por país o por idioma
+      para ver lo que dice gente de tu mismo lugar.
+    </p>
+
+    <div class="filtros">
+      <div class="campo">
+        <label for="filtro-pais">País del turista</label>
+        <select id="filtro-pais"><option value="">Todos los países</option></select>
+      </div>
+      <div class="campo">
+        <label for="filtro-idioma">Idioma</label>
+        <select id="filtro-idioma"><option value="">Todos los idiomas</option></select>
+      </div>
+      <button type="button" class="btn-suave" id="limpiar-filtros">Limpiar filtros</button>
+    </div>
+
+    <p class="contador" id="resenas-total">Cargando reseñas…</p>
+
+    <div class="lista-resenas" id="lista-resenas"></div>
+
+    <div class="resena-vacio" id="resenas-vacio" hidden>
+      <h3>Todavía no hay reseñas publicadas</h3>
+      <p>Si visitaste El Calafate, sé la primera persona en contar tu experiencia.</p>
+      <a class="btn-suave" href="#dejar-resena" style="text-decoration:none; display:inline-block;">Dejar mi reseña</a>
+    </div>
+  </section>
+
+  <!-- ===================== DEJAR RESEÑA ===================== -->
+  <section id="dejar-resena">
+    <h2>Dejanos tu reseña</h2>
+    <p class="intro">
+      Contá tu experiencia para que le sirva a otros viajeros. Especialmente útil si venís de
+      otro país: alguien de tu lugar va a leer lo que escribiste.
+    </p>
+
     <form action="https://formspree.io/f/xyzdknkw" method="POST">
-      <input type="text" name="nombre" placeholder="Tu nombre" required>
-      <input type="email" name="email" placeholder="Tu email" required>
-      <select name="interes">
-        <option value="alojamiento">Alojamiento</option>
-        <option value="excursiones">Excursiones</option>
-        <option value="gastronomia">Gastronomía</option>
-        <option value="transporte">Transporte</option>
-        <option value="remises">Remises económicos</option>
-        <option value="cambio">Casa de cambio</option>
-      </select>
-      <textarea name="mensaje" placeholder="Escribí tu consulta o comentario (pros y contras de lugares visitados)..." rows="5" required></textarea>
+      <div class="fila">
+        <div class="form-group">
+          <label for="nombre">Tu nombre</label>
+          <input type="text" id="nombre" name="nombre" required placeholder="Cómo querés firmar">
+        </div>
+        <div class="form-group">
+          <label for="email">Tu email</label>
+          <input type="email" id="email" name="email" required placeholder="tu@email.com">
+        </div>
+      </div>
 
-      <input type="hidden" name="_subject" value="Nuevo mensaje desde la web de El Calafate">
+      <div class="fila">
+        <div class="form-group">
+          <label for="pais">De dónde sos</label>
+          <input type="text" id="pais" name="pais" required placeholder="Ej.: Estados Unidos, Argentina, Alemania">
+        </div>
+        <div class="form-group">
+          <label for="idioma">Idioma de tu reseña</label>
+          <select id="idioma" name="idioma" class="campo-form" required>
+            <option value="es">Español</option>
+            <option value="en">English</option>
+            <option value="pt">Português</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="form-group">
+          <label for="lugar">Lugar reseñado</label>
+          <input type="text" id="lugar" name="lugar" required placeholder="Ej.: Glaciar Perito Moreno">
+        </div>
+        <div class="form-group">
+          <label for="puntuacion">Puntuación</label>
+          <select id="puntuacion" name="puntuacion" class="campo-form" required>
+            <option value="5">★★★★★ — Excelente</option>
+            <option value="4">★★★★ — Muy bueno</option>
+            <option value="3">★★★ — Regular</option>
+            <option value="2">★★ — Bajo</option>
+            <option value="1">★ — Malo</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="fecha">¿Cuándo fuiste?</label>
+        <input type="month" id="fecha" name="fecha">
+      </div>
+
+      <div class="form-group">
+        <label for="mensaje">Tu reseña</label>
+        <textarea id="mensaje" name="mensaje" rows="6" required placeholder="Contá qué te gustó, qué no, cuánto te tomó y qué le recomendarías a alguien de tu país."></textarea>
+      </div>
+
+      <input type="hidden" name="_subject" value="Nueva reseña de turista - Explore Calafate">
       <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://tu-sitio.com/gracias.html">
+      <input type="hidden" name="_next" content="https://cuutii.github.io/Explore-Calafate/#gracias">
 
-      <button type="submit" class="submit-button">Enviar</button>
+      <button type="submit" class="submit-button">Enviar mi reseña</button>
     </form>
+
     <div class="nota">
-      🙌 La página se mantiene con <b>donaciones voluntarias</b>.
-      Tu devolución y comentarios ayudan a otros viajeros a elegir mejor.
-      ¡Gracias por apoyar esta iniciativa!
+      📌 <b>Cómo se publican las reseñas:</b> cada reseña llega al responsable del sitio y se
+      revisa a mano antes de aparecer en la página. Así se evita el spam y se garantiza que
+      todo lo publicado sea <b>verdadero</b>. Por eso puede tardar unos días en mostrarse.
     </div>
   </section>
 
   <footer>
-    <p>© 2026 - Promoción turística de El Calafate</p>
+    <p>© 2026 — Explore Calafate · Guía turística independiente de El Patagonia</p>
+    <p class="creditos">
+      <b>Créditos de imágenes</b> — todas obtenidas de <a href="https://commons.wikimedia.org/">Wikimedia Commons</a> y guardadas en el sitio:<br>
+      <b>Glaciar Perito Moreno</b> © <a href="https://commons.wikimedia.org/wiki/User:Fernando">Fernando</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> &nbsp;|&nbsp;
+      <b>Glaciar Spegazzini</b> © <a href="https://commons.wikimedia.org/wiki/User:Fernando">Fernando</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a><br>
+      <b>El Chaltén (Laguna Torre)</b> © <a href="https://commons.wikimedia.org/wiki/File:Always_Pointed_Up_(31669732336).jpg">Los Paseos</a> · <a href="https://creativecommons.org/licenses/by-sa/2.0">CC BY-SA 2.0</a> &nbsp;|&nbsp;
+      <b>El Calafate (Av. Libertador)</b> © <a href="https://commons.wikimedia.org/wiki/File:El_Calafate_Village.jpg">flopisubmarina</a> · <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a><br>
+      <b>Cordero patagónico</b> © <a href="https://commons.wikimedia.org/wiki/User:Ccarosio">Ccarosio</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
+    </p>
   </footer>
+
+  <script src="resenas.js"></script>
 </body>
 </html>
